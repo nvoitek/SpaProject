@@ -1,0 +1,28 @@
+.nav {
+    font-family: $font-primary;
+    
+    .nav-logo {
+        display: inline-block;
+        width: 80px;
+        margin: 5px;
+    }
+    
+    ul {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+
+        .nav-item {
+            display: inline-block;
+            list-style-type: none;
+            margin: 5px 10px;
+
+            a {
+                color: $color-text-primary;
+                font-size: $font-secondary-size;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}

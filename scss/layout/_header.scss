@@ -1,0 +1,48 @@
+.home-section {
+    @include flex(row, wrap);
+    
+    width: $layout-width/2;
+
+    header {
+        font-family: $font-secondary;
+        h1 {
+            font-size: $font-main-header-size;
+        }
+        h3 {
+            font-size: $font-primary-size;
+        }
+    }
+
+    p {
+        font-family: $font-primary;
+        font-size: $font-primary-size;
+    }
+
+    .btn-primary {
+        margin: 5px 10px;
+    }
+
+    .watch {
+        margin: 5px 10px;
+        
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        p {
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    .left-img {
+        position: absolute;
+        left: 0px - $layout-horizontal-margin - 100px;
+    }
+
+    .top-img {
+        position: absolute;
+        top: 0px;
+        right: 0px - $layout-horizontal-margin;
+    }
+}
