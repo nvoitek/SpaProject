@@ -1,0 +1,16 @@
+.feature-section {
+    @include flex(column, wrap, center, initial);
+    width: $layout-width * 0.75;
+    margin: auto;
+    padding-top: 150px;
+
+    h2 {
+        font-family: $font-secondary;
+        font-size: $font-section-header-size;
+    }
+    p {
+        font-family: $font-primary;
+        font-size: $font-primary-size;
+        text-align: center;
+    }
+}

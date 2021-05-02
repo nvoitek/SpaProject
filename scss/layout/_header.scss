@@ -1,7 +1,7 @@
 .home-section {
-    @include flex(row, wrap);
-    
     width: $layout-width/2;
+    margin: 0px $layout-horizontal-margin;
+    padding-top: 150px;
 
     header {
         font-family: $font-secondary;
@@ -19,12 +19,12 @@
     }
 
     .btn-primary {
-        margin: 5px 10px;
+        display: inline-block;
     }
 
     .watch {
-        margin: 5px 10px;
-        
+        display: inline-block;
+        margin: 0px 10px;
         i {
             display: inline-block;
             vertical-align: middle;
@@ -37,12 +37,13 @@
 
     .left-img {
         position: absolute;
-        left: 0px - $layout-horizontal-margin - 100px;
+        top: 100px;
+        left: -100px;
     }
 
     .top-img {
         position: absolute;
         top: 0px;
-        right: 0px - $layout-horizontal-margin;
+        right: 0px;
     }
 }

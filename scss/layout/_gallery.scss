@@ -1,0 +1,43 @@
+.gallery-section {
+    @include flex(row, nowrap, initial, initial);
+    width: $body-width;
+    padding-top: 150px;
+
+    .gallery-item {
+        position: relative;
+        flex-basis: 25%;
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-ico {
+            @include flex(column, nowrap, center, center);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-primary-opaque;
+            opacity: 0;
+            margin: 0;
+            text-align: center;
+            color: #fff;
+            transition: all .3s;
+            
+            img {
+                height: 60px;
+            }
+            h3 {
+                font-family: $font-secondary;
+                font-size: $font-primary-size;
+            }
+        }
+
+        .gallery-ico:hover {
+            opacity: 1;
+        }
+    }
+}
