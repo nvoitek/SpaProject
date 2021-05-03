@@ -1,0 +1,45 @@
+.contact-section {
+    @include flex(column, wrap, center, initial);
+    min-width: $body-width;
+    margin-top: 50px;
+    padding-top: 50px;
+
+    background-color: $color-primary;
+    color: $color-text-secondary;
+
+    h2 {
+        font-family: $font-secondary;
+        font-size: $font-section-header-size;
+    }
+    p {
+        font-family: $font-primary;
+        font-size: $font-primary-size;
+        text-align: center;
+    }
+
+    .container {
+        @include flex(row, nowrap, initial, initial);
+
+        .icons {
+            @include flex(column, nowrap, initial, initial);
+
+            .item {
+                @include flex(row, nowrap, center, initial);
+
+                p {
+                    margin: 15px;
+                    text-align: left;
+                }
+
+                i {
+                    margin: 15px;
+                    font-size: 1em;
+                }
+            }
+        }
+
+        form {
+            @include flex(column, nowrap, initial, initial);
+        }
+    }
+}

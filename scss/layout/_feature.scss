@@ -35,6 +35,11 @@
                 text-align: center;
             }
 
+            .item-img {
+                width: 100%;
+                object-fit: cover;
+            }
+
             .btn-primary {
                 text-transform: uppercase;
             }

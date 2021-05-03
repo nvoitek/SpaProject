@@ -1,0 +1,69 @@
+.appointment-section {
+    @include flex(row, nowrap, initial, initial);
+    min-width: $body-width;
+    padding-top: 150px;
+
+    .form-container {
+        flex-grow: 1;
+        background-color: $color-primary;
+        form {
+            @include flex(row, wrap, initial, initial);
+            width: $layout-width * 0.75;
+            padding: 100px;
+            
+            font-family: $font-primary;
+            font-size: $font-primary-size;
+    
+            input[type=text],
+            input[type=email],
+            input[type=tel],
+            input[type=date],
+            input[type=time],
+            select {
+                flex-basis: 45%;
+                flex-grow: 1;
+                margin: 10px;
+
+                text-transform: uppercase;
+                color: $color-text-secondary;
+                background-color: $color-primary;
+                border: 0px;
+                border-bottom: 1px solid white;
+            }
+
+            ::-webkit-input-placeholder {
+                color: $color-text-secondary;
+            }
+
+            input[type=date]::-webkit-calendar-picker-indicator,
+            input[type=time]::-webkit-calendar-picker-indicator
+            {
+                filter: invert(1);
+            }
+
+            label {
+                flex-basis: 95%;
+                flex-grow: 1;
+                margin: 10px;
+                text-transform: uppercase;
+                color: $color-text-secondary;
+            }
+
+            #notes {
+                flex-basis: 95%;
+                flex-grow: 1;
+                margin: 10px;
+
+                text-transform: none;
+                color: $color-text-secondary;
+            }
+
+            input[type=submit] {
+                margin: 10px;
+                background-color: white;
+                color: $color-text-primary;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -6,6 +6,7 @@
     .gallery-item {
         position: relative;
         flex-basis: 25%;
+        flex-grow: 1;
 
         .gallery-img {
             width: 100%;

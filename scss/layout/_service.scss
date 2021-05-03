@@ -15,14 +15,41 @@
     }
 
     .container {
-        @include flex(row, nowrap, space-around, initial);
+        @include flex(row, nowrap, initial, space-around);
 
         .item {
             @include flex(column, nowrap, center, initial);
+            position: relative;
+            margin: 15px;
 
+            .item-img {
+                width: 100%;
+                object-fit: cover;
+            }
+            
             .card {
+                background-color: white;
+                position: absolute;
+                bottom: -50px;
+
+                width: 300px;
+
+                h3{
+                    font-family: $font-secondary;
+                    font-size: $font-primary-size;
+                    text-align: center;
+                }
+                p {
+                    font-family: $font-primary;
+                    font-size: $font-primary-size;
+                    text-align: center;
+                }
                 .icons {
-                    @include flex(row, nowrap, space-around, initial);
+                    @include flex(row, nowrap, initial, space-around);
+
+                    .fa-stack { 
+                        font-size: 1em; 
+                    }
                 }
             }
         }
