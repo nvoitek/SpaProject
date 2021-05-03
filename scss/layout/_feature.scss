@@ -1,6 +1,6 @@
 .feature-section {
     @include flex(column, wrap, center, initial);
-    width: $layout-width * 0.75;
+    width: $layout-width;
     margin: auto;
     padding-top: 150px;
 
@@ -12,5 +12,32 @@
         font-family: $font-primary;
         font-size: $font-primary-size;
         text-align: center;
+    }
+
+    .container {
+        @include flex(row, nowrap, space-around, initial);
+
+        .item {
+            @include flex(column, nowrap, center, initial);
+
+            border: 1px solid grey;
+            margin: 15px;
+            padding: 20px;
+
+            h3 {
+                font-family: $font-secondary;
+                font-size: $font-primary-size;
+            }
+
+            p {
+                font-family: $font-primary;
+                font-size: $font-primary-size;
+                text-align: center;
+            }
+
+            .btn-primary {
+                text-transform: uppercase;
+            }
+        }
     }
 }

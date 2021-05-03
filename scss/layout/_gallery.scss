@@ -1,6 +1,6 @@
 .gallery-section {
     @include flex(row, nowrap, initial, initial);
-    width: $body-width;
+    min-width: $body-width;
     padding-top: 150px;
 
     .gallery-item {
