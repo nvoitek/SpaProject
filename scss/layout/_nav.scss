@@ -2,6 +2,10 @@
     margin: 0px $layout-horizontal-margin;
     font-family: $font-primary;
     
+    .container {
+        @include flex(column, wrap, center, initial);
+    }
+
     .nav-logo {
         display: inline-block;
         width: 80px;

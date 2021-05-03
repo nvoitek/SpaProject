@@ -39,7 +39,54 @@
         }
 
         form {
-            @include flex(column, nowrap, initial, initial);
+            @include flex(row, wrap, initial, initial);
+            width: $layout-width * 0.5;
+
+            margin: 15px;
+            
+            font-family: $font-primary;
+            font-size: $font-primary-size;
+    
+            input[type=text],
+            input[type=email] {
+                flex-basis: 95%;
+                flex-grow: 1;
+                margin: 10px;
+
+                text-transform: uppercase;
+                color: $color-text-secondary;
+                background-color: $color-primary;
+                border: 0px;
+                border-bottom: 1px solid white;
+            }
+
+            ::-webkit-input-placeholder {
+                color: $color-text-secondary;
+            }
+
+            label {
+                flex-basis: 95%;
+                flex-grow: 1;
+                margin: 10px;
+                text-transform: uppercase;
+                color: $color-text-secondary;
+            }
+
+            #notes {
+                flex-basis: 95%;
+                flex-grow: 1;
+                margin: 10px;
+
+                text-transform: none;
+                color: $color-text-secondary;
+            }
+
+            input[type=submit] {
+                margin: 10px;
+                background-color: white;
+                color: $color-text-primary;
+                text-transform: uppercase;
+            }
         }
     }
 }

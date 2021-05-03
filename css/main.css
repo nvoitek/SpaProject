@@ -18,6 +18,24 @@
   font-family: "Roboto", Helvetica, sans-serif;
 }
 
+.nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
 .nav .nav-logo {
   display: inline-block;
   width: 80px;
@@ -466,14 +484,14 @@
   padding-top: 150px;
 }
 
-.appointment-section .form-container {
+.appointment-section .container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #1ba4ce;
 }
 
-.appointment-section .form-container form {
+.appointment-section .container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,12 +513,12 @@
   font-size: 16px;
 }
 
-.appointment-section .form-container form input[type=text],
-.appointment-section .form-container form input[type=email],
-.appointment-section .form-container form input[type=tel],
-.appointment-section .form-container form input[type=date],
-.appointment-section .form-container form input[type=time],
-.appointment-section .form-container form select {
+.appointment-section .container form input[type=text],
+.appointment-section .container form input[type=email],
+.appointment-section .container form input[type=tel],
+.appointment-section .container form input[type=date],
+.appointment-section .container form input[type=time],
+.appointment-section .container form select {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   -webkit-box-flex: 1;
@@ -514,17 +532,17 @@
   border-bottom: 1px solid white;
 }
 
-.appointment-section .form-container form ::-webkit-input-placeholder {
+.appointment-section .container form ::-webkit-input-placeholder {
   color: white;
 }
 
-.appointment-section .form-container form input[type=date]::-webkit-calendar-picker-indicator,
-.appointment-section .form-container form input[type=time]::-webkit-calendar-picker-indicator {
+.appointment-section .container form input[type=date]::-webkit-calendar-picker-indicator,
+.appointment-section .container form input[type=time]::-webkit-calendar-picker-indicator {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
 
-.appointment-section .form-container form label {
+.appointment-section .container form label {
   -ms-flex-preferred-size: 95%;
       flex-basis: 95%;
   -webkit-box-flex: 1;
@@ -535,7 +553,7 @@
   color: white;
 }
 
-.appointment-section .form-container form #notes {
+.appointment-section .container form #notes {
   -ms-flex-preferred-size: 95%;
       flex-basis: 95%;
   -webkit-box-flex: 1;
@@ -546,7 +564,7 @@
   color: white;
 }
 
-.appointment-section .form-container form input[type=submit] {
+.appointment-section .container form input[type=submit] {
   margin: 10px;
   background-color: white;
   color: black;
@@ -655,18 +673,89 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
   -webkit-box-pack: initial;
       -ms-flex-pack: initial;
           justify-content: initial;
+  width: 570px;
+  margin: 15px;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.contact-section .container form input[type=text],
+.contact-section .container form input[type=email] {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #1ba4ce;
+  border: 0px;
+  border-bottom: 1px solid white;
+}
+
+.contact-section .container form ::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact-section .container form label {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.contact-section .container form #notes {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 10px;
+  text-transform: none;
+  color: white;
+}
+
+.contact-section .container form input[type=submit] {
+  margin: 10px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+}
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  color: grey;
 }
 
 * {

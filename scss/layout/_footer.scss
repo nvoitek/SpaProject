@@ -1,0 +1,4 @@
+.footer-section {
+    @include flex(column, wrap, center, initial);
+    color: grey;
+}
