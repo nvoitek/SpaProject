@@ -11,8 +11,21 @@
             width: $layout-width * 0.75;
             padding: 100px;
             
+            color: $color-text-teritary;
             font-family: $font-primary;
             font-size: $font-primary-size;
+            
+            p {
+                flex-basis: 95%;
+            }
+
+            #appointment-failed {
+                flex-basis: 95%;
+                visibility: hidden;
+            }
+            #appointment-failed.visible {
+                visibility: visible;
+            }
     
             input[type=text],
             input[type=email],
@@ -24,12 +37,22 @@
                 flex-grow: 1;
                 margin: 10px;
 
-                text-transform: uppercase;
                 color: $color-text-teritary;
+                text-transform: uppercase;
                 background-color: $color-primary;
                 border: 0px;
                 border-bottom: 1px solid white;
             }
+
+            input[type=text].invalid ,
+            input[type=email].invalid ,
+            input[type=tel].invalid ,
+            input[type=date].invalid ,
+            input[type=time].invalid ,
+            select.invalid {
+                border-bottom: 0x;
+                border: 2px solid $color-error;
+            }         
 
             ::-webkit-input-placeholder {
                 color: $color-text-teritary;
@@ -46,7 +69,6 @@
                 flex-grow: 1;
                 margin: 10px;
                 text-transform: uppercase;
-                color: $color-text-teritary;
             }
 
             #notes {
@@ -55,7 +77,6 @@
                 margin: 10px;
 
                 text-transform: none;
-                color: $color-text-teritary;
             }
 
             input[type=submit] {

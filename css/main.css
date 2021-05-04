@@ -547,8 +547,24 @@ select {
           justify-content: initial;
   width: 855px;
   padding: 100px;
+  color: white;
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 16px;
+}
+
+.appointment-section .container form p {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+}
+
+.appointment-section .container form #appointment-failed {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  visibility: hidden;
+}
+
+.appointment-section .container form #appointment-failed.visible {
+  visibility: visible;
 }
 
 .appointment-section .container form input[type=text],
@@ -563,11 +579,21 @@ select {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 10px;
-  text-transform: uppercase;
   color: white;
+  text-transform: uppercase;
   background-color: #1ba4ce;
   border: 0px;
   border-bottom: 1px solid white;
+}
+
+.appointment-section .container form input[type=text].invalid,
+.appointment-section .container form input[type=email].invalid,
+.appointment-section .container form input[type=tel].invalid,
+.appointment-section .container form input[type=date].invalid,
+.appointment-section .container form input[type=time].invalid,
+.appointment-section .container form select.invalid {
+  border-bottom: 0x;
+  border: 2px solid darkred;
 }
 
 .appointment-section .container form ::-webkit-input-placeholder {
@@ -588,7 +614,6 @@ select {
           flex-grow: 1;
   margin: 10px;
   text-transform: uppercase;
-  color: white;
 }
 
 .appointment-section .container form #notes {
@@ -599,7 +624,6 @@ select {
           flex-grow: 1;
   margin: 10px;
   text-transform: none;
-  color: white;
 }
 
 .appointment-section .container form input[type=submit] {

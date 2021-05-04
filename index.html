@@ -179,21 +179,22 @@
     <section id="appointment" class="appointment-section">
         <img src="img/contact-bg.jpg" alt="contact">
         <div class="container">
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email address">
-                <select>
+            <form id="appointment-form">
+                <input id="name" type="text" placeholder="Name">
+                <input id="email" type="email" placeholder="Email address">
+                <select id="sel-service">
                     <option value="" disabled selected>Select service</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-                <input type="tel" placeholder="Phone number">
-                <input type="date" placeholder="Date">
-                <input type="time" placeholder="Time">
+                <input id="tel" type="tel" placeholder="Phone number">
+                <input id="date" type="date" placeholder="Date">
+                <input id="time" type="time" placeholder="Time">
                 <label for="notes">Your notes</label>
                 <input id="notes" type="text">
-                <input class="btn-primary btn-round" type="submit" value="Make an appointment">
+                <input id="make-appointment" class="btn-primary btn-round" type="submit" value="Make an appointment">
+                <p id="appointment-failed">Please fill all of the required fields</p>
             </form>
         </div>
     </section>
