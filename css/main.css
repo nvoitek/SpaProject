@@ -208,8 +208,8 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
@@ -231,8 +231,6 @@ select {
 
 .gallery-section .gallery-item .gallery-img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .gallery-section .gallery-item .gallery-ico {
@@ -319,8 +317,8 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
@@ -344,6 +342,8 @@ select {
   -webkit-box-pack: initial;
       -ms-flex-pack: initial;
           justify-content: initial;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   border: 1px solid grey;
   margin: 15px;
   padding: 20px;
@@ -363,8 +363,6 @@ select {
 
 .feature-section .container .item .item-img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .feature-section .container .item .btn-primary {
@@ -426,8 +424,8 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
@@ -451,14 +449,14 @@ select {
   -webkit-box-pack: initial;
       -ms-flex-pack: initial;
           justify-content: initial;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   position: relative;
   margin: 15px;
 }
 
 .service-section .container .item .item-img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .service-section .container .item .card {
@@ -884,14 +882,27 @@ body {
   }
   .nav-section ul {
     background-color: #1ba4ce;
-    max-width: 300px;
-    text-align: right;
-    color: white;
   }
   .nav-section ul .nav-item {
     display: block;
     text-align: right;
     margin: 0;
+  }
+  .nav-section ul .nav-item a {
+    color: white;
+    text-align: right;
+  }
+  .gallery-section .gallery-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .feature-section .container .item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .service-section .container .item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

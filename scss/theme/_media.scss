@@ -15,6 +15,7 @@
             display: none;
         }
     }
+
     .nav-section {
         position: relative;
 
@@ -36,15 +37,39 @@
     
         ul {
             background-color: $color-primary;
-            max-width: 300px;
-            text-align: right;
-            color: $color-text-teritary;
 
             .nav-item {
                 display: block;
                 text-align: right;
                 margin: 0;
+
+                a {
+                    color: $color-text-teritary;
+                    text-align: right;
+                }
             }
         }
     } 
+
+    .gallery-section {
+        .gallery-item {
+            flex-basis: 100%;
+        }
+    }
+
+    .feature-section {
+        .container {
+            .item {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    .service-section {
+        .container {
+            .item {
+                flex-basis: 100%;
+            }
+        }
+    }
 }

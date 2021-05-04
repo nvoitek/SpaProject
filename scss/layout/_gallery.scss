@@ -1,5 +1,5 @@
 .gallery-section {
-    @include flex(row, nowrap, initial, initial);
+    @include flex(row, wrap, initial, initial);
     max-width: $body-width;
     padding-top: 150px;
 
@@ -10,7 +10,6 @@
 
         .gallery-img {
             width: 100%;
-            object-fit: cover;
         }
 
         .gallery-ico {
