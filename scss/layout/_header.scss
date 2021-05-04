@@ -4,18 +4,20 @@
     padding-top: 150px;
 
     header {
-        font-family: $font-secondary;
         h1 {
+            font-family: $font-secondary;
             font-size: $font-main-header-size;
         }
         h3 {
+            color: $color-text-secondary;
+            font-family: $font-secondary;
             font-size: $font-primary-size;
         }
     }
 
     p {
         font-family: $font-primary;
-        font-size: $font-primary-size;
+        font-size: $font-secondary-size;
     }
 
     .btn-primary {
@@ -26,6 +28,7 @@
         display: inline-block;
         margin: 0px 10px;
         i {
+            color: $color-text-secondary;
             font-size: 1em;
             display: inline-block;
         }

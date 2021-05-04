@@ -5,6 +5,7 @@
     padding-top: 150px;
 
     h2 {
+        color: $color-text-secondary;
         font-family: $font-secondary;
         font-size: $font-section-header-size;
     }
@@ -35,8 +36,9 @@
                 width: 300px;
 
                 h3{
+                    color: $color-text-secondary;
                     font-family: $font-secondary;
-                    font-size: $font-primary-size;
+                    font-size: $font-card-header-size;
                     text-align: center;
                 }
                 p {
@@ -49,6 +51,18 @@
 
                     .fa-stack { 
                         font-size: 1em; 
+
+                        &:hover {
+                            .fa-circle {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+
+                    .fa-inverse {
+                        background-color: $color-primary;
+                        color: $color-text-teritary;
+                        border-radius: 1em;
                     }
                 }
             }

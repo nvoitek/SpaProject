@@ -5,7 +5,7 @@
     padding-top: 50px;
 
     background-color: $color-primary;
-    color: $color-text-secondary;
+    color: $color-text-teritary;
 
     h2 {
         font-family: $font-secondary;
@@ -25,6 +25,8 @@
 
             .item {
                 @include flex(row, nowrap, center, initial);
+
+                font-family: $font-primary;
 
                 p {
                     margin: 15px;
@@ -54,14 +56,14 @@
                 margin: 10px;
 
                 text-transform: uppercase;
-                color: $color-text-secondary;
+                color: $color-text-teritary;
                 background-color: $color-primary;
                 border: 0px;
                 border-bottom: 1px solid white;
             }
 
             ::-webkit-input-placeholder {
-                color: $color-text-secondary;
+                color: $color-text-teritary;
             }
 
             label {
@@ -69,7 +71,7 @@
                 flex-grow: 1;
                 margin: 10px;
                 text-transform: uppercase;
-                color: $color-text-secondary;
+                color: $color-text-teritary;
             }
 
             #notes {
@@ -78,13 +80,13 @@
                 margin: 10px;
 
                 text-transform: none;
-                color: $color-text-secondary;
+                color: $color-text-teritary;
             }
 
             input[type=submit] {
                 margin: 10px;
                 background-color: white;
-                color: $color-text-primary;
+                color: $color-text-secondary;
                 text-transform: uppercase;
             }
         }

@@ -6,15 +6,17 @@
 
     header {
         @include flex(column, wrap, center, initial);
-        font-family: $font-secondary;
         img {
             display: inline-block;
             width: 80px;
         }
         h2 {
+            font-family: $font-secondary;
             font-size: $font-section-header-size;
         }
         h3 {
+            color: $color-text-secondary;
+            font-family: $font-secondary;
             font-size: $font-primary-size;
         }
     }

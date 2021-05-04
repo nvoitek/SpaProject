@@ -23,7 +23,8 @@
             margin: 5px 10px;
 
             a {
-                color: $color-text-primary;
+                color: $color-text-secondary;
+                font-family: $font-primary;
                 font-size: $font-secondary-size;
                 text-transform: uppercase;
                 text-decoration: none;

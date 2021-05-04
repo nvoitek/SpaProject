@@ -5,6 +5,7 @@
     padding-top: 150px;
 
     h2 {
+        color: $color-text-secondary;
         font-family: $font-secondary;
         font-size: $font-section-header-size;
     }
@@ -25,8 +26,9 @@
             padding: 20px;
 
             h3 {
+                color: $color-text-secondary;
                 font-family: $font-secondary;
-                font-size: $font-primary-size;
+                font-size: $font-card-header-size;
             }
 
             p {
@@ -42,6 +44,20 @@
 
             .btn-primary {
                 text-transform: uppercase;
+                color: white;
+                background-color: $color-teritary;
+            }
+
+            &:hover {
+                @include box-shadow;
+
+                border: 1px solid white;
+
+                .btn-primary {
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: $color-primary;
+                }
             }
         }
     }
