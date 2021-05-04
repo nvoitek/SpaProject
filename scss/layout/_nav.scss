@@ -1,9 +1,22 @@
-.nav {
-    margin: 0px $layout-horizontal-margin;
+.nav-section {
     font-family: $font-primary;
     
     .container {
         @include flex(column, wrap, center, initial);
+    }
+
+    #drop-nav {
+        display: none;
+    }
+    
+    label[for="drop-nav"] {
+        display: none;
+    }
+
+    i {
+        margin: 10px;
+        font-size: 2.5em;
+        color: $color-primary;
     }
 
     .nav-logo {

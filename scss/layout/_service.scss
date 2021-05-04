@@ -1,6 +1,6 @@
 .service-section {
     @include flex(column, wrap, center, initial);
-    width: $layout-width;
+    max-width: $layout-width;
     margin: auto;
     padding-top: 150px;
 
@@ -33,7 +33,7 @@
                 position: absolute;
                 bottom: -50px;
 
-                width: 300px;
+                max-width: 300px;
 
                 h3{
                     color: $color-text-secondary;

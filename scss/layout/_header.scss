@@ -1,6 +1,5 @@
 .home-section {
-    width: $layout-width/2;
-    margin: 0px $layout-horizontal-margin;
+    max-width: $layout-width/2;
     padding-top: 150px;
 
     header {

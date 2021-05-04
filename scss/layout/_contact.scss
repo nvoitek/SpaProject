@@ -1,6 +1,6 @@
 .contact-section {
     @include flex(column, wrap, center, initial);
-    min-width: $body-width;
+    max-width: $body-width;
     margin-top: 50px;
     padding-top: 50px;
 
@@ -42,7 +42,7 @@
 
         form {
             @include flex(row, wrap, initial, initial);
-            width: $layout-width * 0.5;
+            max-width: $layout-width * 0.5;
 
             margin: 15px;
             

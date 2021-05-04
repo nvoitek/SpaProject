@@ -1,0 +1,50 @@
+@media (max-width: 600px) {
+
+    .section {
+        margin: 0px $layout-horizontal-mobile-margin;
+    }
+
+    .home-section {
+        .left-img {
+            left: -15px;
+            top: 300px;
+            width: 50px;
+        }
+    
+        .top-img {
+            display: none;
+        }
+    }
+    .nav-section {
+        position: relative;
+
+        label[for="drop-nav"] {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    
+        ul {
+            display: none;
+        }
+    
+        #drop-nav:checked + ul {
+            display: block;
+        }
+    
+        ul {
+            background-color: $color-primary;
+            max-width: 300px;
+            text-align: right;
+            color: $color-text-teritary;
+
+            .nav-item {
+                display: block;
+                text-align: right;
+                margin: 0;
+            }
+        }
+    } 
+}

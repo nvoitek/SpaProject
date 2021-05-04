@@ -1,6 +1,6 @@
 .feature-section {
     @include flex(column, wrap, center, initial);
-    width: $layout-width;
+    max-width: $layout-width;
     margin: auto;
     padding-top: 150px;
 
@@ -16,8 +16,8 @@
     }
 
     .container {
-        @include flex(row, nowrap, space-around, initial);
-
+        @include flex(row, nowrap, initial, space-around);
+        
         .item {
             @include flex(column, nowrap, center, initial);
 

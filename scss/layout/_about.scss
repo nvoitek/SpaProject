@@ -1,6 +1,6 @@
 .about-section {
-    @include flex(column, wrap, center, initial);
-    width: $layout-width * 0.75;
+    @include flex(column, nowrap, center, initial);
+    max-width: $layout-width * 0.75;
     margin: auto;
     padding-top: 150px;
 
